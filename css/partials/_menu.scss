@@ -20,7 +20,7 @@ nav {
     transition: 0.5s;
   }
 
-  @media (max-width: 744px) {
+  @media (max-width: 768px) {
     padding: 0 28px;
   }
 }
@@ -67,7 +67,7 @@ nav {
   transition: 0.8s;
 }
 
-@media (max-width: 744px) {
+@media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }

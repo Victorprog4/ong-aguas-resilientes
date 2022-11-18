@@ -12,8 +12,7 @@
   src: url(../../fonts/PraktikaRounded-LightExt.otf);
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Praktika bold";
   letter-spacing: 0.18rem;
   background: linear-gradient(180deg, #f7fcff 33.96%, #6d6d6d 100%);
@@ -21,8 +20,14 @@ h2 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-h4 {
-  font-family: "Praktika Regular";
+
+h2 {
+  font-family: "Praktika bold";
+  letter-spacing: 0.18rem;
+  background: linear-gradient(235.27deg, #2c97ff 23.38%, #1a538b 65.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h3 {
@@ -32,6 +37,10 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+h4 {
+  font-family: "Praktika Regular";
 }
 
 span,
