@@ -1,0 +1,42 @@
+//fontes
+@font-face {
+  font-family: "Praktika bold";
+  src: url(../../fonts/PraktikaRounded-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Praktika Regular";
+  src: url(../../fonts/PraktikaRounded-Regular.otf);
+}
+@font-face {
+  font-family: "Praktika Light";
+  src: url(../../fonts/PraktikaRounded-LightExt.otf);
+}
+
+h1,
+h2 {
+  font-family: "Praktika bold";
+  letter-spacing: 0.18rem;
+  background: linear-gradient(180deg, #f7fcff 33.96%, #6d6d6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+h4 {
+  font-family: "Praktika Regular";
+}
+
+h3 {
+  font-family: "Praktika bold";
+  letter-spacing: 0.18rem;
+  background: linear-gradient(180deg, #f7fcff 33.96%, #6d6d6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+span,
+p,
+a {
+  font-family: "Praktika Regular";
+  letter-spacing: 0.14rem;
+}

@@ -1,0 +1,34 @@
+//animation of background waves home
+
+@keyframes anime-bg-home {
+  0% {
+    transform: translateY(-60px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.onda-01 {
+  transform-origin: top top;
+  animation: 7s anime-bg-home ease-in infinite alternate;
+}
+.onda-02 {
+  transform-origin: top top;
+  animation: 8s anime-bg-home 0.5s ease-in infinite alternate;
+}
+.onda-03 {
+  transform-origin: top top;
+  animation: 9s anime-bg-home ease-in infinite alternate;
+}
+.onda-04 {
+  transform-origin: top top;
+  animation: 10s anime-bg-home 0.5s ease-in infinite alternate;
+}
+.onda-05 {
+  transform-origin: top top;
+  animation: 10s anime-bg-home ease-in infinite alternate;
+}
