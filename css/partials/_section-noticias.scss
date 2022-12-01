@@ -1,0 +1,116 @@
+.noticias {
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  margin-top: 4.8rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1.6fr 0.1fr 1.6fr;
+    grid-template-rows: 0.4fr 1.2fr 1.2fr;
+    grid-auto-flow: row;
+    gap: 1% 0;
+    border: 2px solid red;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 0 84px;
+    grid-template-areas:
+      "title-logo title-logo title-logo"
+      "contain-01 . contain-02"
+      "contain-03 . contain-04";
+    width: 100%;
+  }
+
+  .title-logo {
+    grid-area: title-logo;
+    display: flex;
+    align-items: center;
+
+    .icon-girando {
+      transform-origin: center center;
+      animation: anime-girando 20s ease infinite forwards;
+    }
+
+    h2 {
+      color: #202020;
+      font-family: "Praktika bold";
+      letter-spacing: 0.1rem;
+      font-size: 72px;
+      margin-left: 2rem;
+      line-height: 150%;
+    }
+  }
+
+  .contain-01 {
+    grid-area: contain-01;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    div {
+      justify-content: center;
+      width: 400px;
+      height: 500px;
+      background: #ffffff;
+      box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25), 10px 10px 0px #26486c,
+        -6px 0px 33px rgba(0, 0, 0, 0.5);
+      border-radius: 45px 0px;
+    }
+  }
+
+  .contain-02 {
+    grid-area: contain-02;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    div {
+      justify-content: center;
+      width: 400px;
+      height: 500px;
+      background: #ffffff;
+      box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25), 10px 10px 0px #26486c,
+        -6px 0px 33px rgba(0, 0, 0, 0.5);
+      border-radius: 45px 0px;
+    }
+  }
+
+  .contain-03 {
+    grid-area: contain-03;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    div {
+      justify-content: center;
+      width: 400px;
+      height: 500px;
+      background: #ffffff;
+      box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25), 10px 10px 0px #26486c,
+        -6px 0px 33px rgba(0, 0, 0, 0.5);
+      border-radius: 45px 0px;
+    }
+  }
+
+  .contain-04 {
+    grid-area: contain-04;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    div {
+      justify-content: center;
+      width: 400px;
+      height: 500px;
+      background: #ffffff;
+      box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25), 10px 10px 0px #26486c,
+        -6px 0px 33px rgba(0, 0, 0, 0.5);
+      border-radius: 45px 0px;
+    }
+  }
+}
+
+@keyframes anime-girando {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

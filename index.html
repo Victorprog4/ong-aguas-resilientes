@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="js/svg-inject.min.js"></script>
     <script
@@ -18,7 +22,6 @@
         <div class="logo">
           <img
             src="./img/logo-header-aguas-resilientes.svg"
-            onload="SVGInject(this)"
           />
         </div>
         <div class="mobile-menu">
@@ -59,32 +62,68 @@
         </div>
       </section>
 
-      <section class="about">
-        <h2>Sobre nós</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          velit iusto officiis enim expedita laborum fugit earum maxime ut fuga
-          eius hic, veritatis ipsum voluptates cum eum illum consequatur
-          porro.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatibus velit iusto officiis enim expedita laborum fugit earum
-          maxime ut fuga eius hic, veritatis ipsum voluptates cum eum illum
-          consequatur porro.
-        </p>
-        <button type="button" class="btn btn-dark">
-          <a href="#"
-            >Saiba mais<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-        </button>
+      <section class="sobre"></section>
+
+      <section class="depoimentos">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/card-swipper.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/card-swipper.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/card-swipper.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/card-swipper.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/card-swipper.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next item-prev-modify"></div>
+          <div class="swiper-button-prev item-prev-modify"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
 
-      <section class="depositions">
-        <div class="img-middle-ondas">
-          <img src="./img/ondas-middle.svg" onload="SVGInject(this)" />
+      <section class="noticias">
+        <div class="container">
+          <div class="title-logo">
+            <img src="./img/icon-noticias.svg" alt="" onload="SVGInject(this)">
+            <h2>NOTÍCIAS</h2>
+          </div>
+          <div class="contain-01"><div></div></div>
+          <div class="contain-02"><div></div></div>
+          <div class="contain-03"><div></div></div>
+          <div class="contain-04"><div></div></div>
         </div>
       </section>
     </main>
-    
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        hashNavigation: {
+          watchState: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
