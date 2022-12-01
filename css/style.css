@@ -401,7 +401,6 @@ a {
   grid-template-rows: 0.4fr 1.2fr 1.2fr;
   grid-auto-flow: row;
   gap: 1% 0;
-  border: 2px solid red;
   justify-content: stretch;
   align-items: stretch;
   padding: 0 84px;
